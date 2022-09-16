@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 918863ae45f18614293ae2e45862d680
+guid: bccce71d5c039754ebd07104c2a163ac
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 1
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -68,10 +68,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Normal Pellet_0
+      name: Map v3_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 19
-        width: 18
-        height: 14
+        x: 27
+        y: 122
+        width: 41
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +120,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80d9bae4e8d65ea4bbe62ecb9b1796b1
-      internalID: -1031992536
+      spriteID: d51d6dd2171cb8143aa00a345d9c0ea4
+      internalID: 2083010522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map v3_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 122
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f9a1fb8988e7945a885edafb038141
+      internalID: -666447501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map v3_6
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 25
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8694f03d6173da74ca9690b90efe9dfc
+      internalID: -552951678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Map v3_9
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 25
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77121573ab986c468c1daf26718ff12
+      internalID: 1236687442
       vertices: []
       indices: 
       edges: []
@@ -137,7 +200,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Normal Pellet_0: -1031992536
+      Map v3_0: 457814963
+      Map v3_4: -311201841
+      Map v3_5: -683479822
+      Map v3_2: 172113422
+      Map v3_1: 2083010522
+      Map v3_9: 1236687442
+      Map v3_11: 1493092843
+      Map v3_10: -2775465
+      Map v3_3: -666447501
+      Map v3_7: 934516089
+      Map v3_8: 2061392701
+      Map v3_6: -552951678
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
