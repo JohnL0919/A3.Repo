@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 53.622852
+  orthographic size: 56.1242
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -590,7 +590,7 @@ Tilemap:
       - {fileID: -99866924, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: -799269499, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: 398127611, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
-      m_AnimationSpeed: 8.066668
+      m_AnimationSpeed: 8.678177
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 36, y: -63, z: 0}
@@ -600,7 +600,7 @@ Tilemap:
       - {fileID: -99866924, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: -799269499, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: 398127611, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
-      m_AnimationSpeed: 8.577347
+      m_AnimationSpeed: 8.432123
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -37, y: 5, z: 0}
@@ -610,7 +610,7 @@ Tilemap:
       - {fileID: -99866924, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: -799269499, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: 398127611, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
-      m_AnimationSpeed: 9.46414
+      m_AnimationSpeed: 9.338506
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: 36, y: 5, z: 0}
@@ -620,7 +620,7 @@ Tilemap:
       - {fileID: -99866924, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: -799269499, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
       - {fileID: 398127611, guid: 0315ab092ff86cf46852f9154f9c6029, type: 3}
-      m_AnimationSpeed: 9.351436
+      m_AnimationSpeed: 9.114372
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   m_TileAssetArray:
