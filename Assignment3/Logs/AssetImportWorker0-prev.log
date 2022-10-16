@@ -16,9 +16,15 @@ C:/Users/johnl/Documents/GitHub/A3.Repo/Assignment3
 Logs/AssetImportWorker0.log
 -srvPort
 <<<<<<< HEAD
+<<<<<<< HEAD
 50561
 Successfully changed project path to: X:/A3.Repo/Assignment3
 X:/A3.Repo/Assignment3
+=======
+63975
+Successfully changed project path to: C:/Users/johnl/Documents/GitHub/A3.Repo/Assignment3
+C:/Users/johnl/Documents/GitHub/A3.Repo/Assignment3
+>>>>>>> parent of 77be50f (Working Version)
 =======
 63975
 Successfully changed project path to: C:/Users/johnl/Documents/GitHub/A3.Repo/Assignment3
@@ -54,7 +60,11 @@ C:/Users/johnl/Documents/GitHub/A3.Repo/Assignment3
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< HEAD
+<<<<<<< HEAD
 Refreshing native plugins compatible for Editor in 93.26 ms, found 4 plugins.
+=======
+Refreshing native plugins compatible for Editor in 453.38 ms, found 4 plugins.
+>>>>>>> parent of 77be50f (Working Version)
 =======
 Refreshing native plugins compatible for Editor in 453.38 ms, found 4 plugins.
 >>>>>>> parent of 77be50f (Working Version)
@@ -70,6 +80,7 @@ Direct3D:
     VRAM:     4054 MB
     Driver:   27.20.100.8681
 Initialize mono
+<<<<<<< HEAD
 <<<<<<< HEAD
 Mono path[0] = 'Y:/Program Files/Unity/Hub/Editor/2022.1.8f1/Editor/Data/Managed'
 Mono path[1] = 'Y:/Program Files/Unity/Hub/Editor/2022.1.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
@@ -88,6 +99,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1001ms)
 		BeginReloadAssembly (91ms)
 =======
+=======
+>>>>>>> parent of 77be50f (Working Version)
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.8f1/Editor/Data/MonoBleedingEdge/etc'
@@ -106,11 +119,15 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (3091ms)
 		BeginReloadAssembly (335ms)
+<<<<<<< HEAD
+>>>>>>> parent of 77be50f (Working Version)
+=======
 >>>>>>> parent of 77be50f (Working Version)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			CreateAndSetChildDomain (1ms)
 		EndReloadAssembly (672ms)
@@ -131,6 +148,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (156ms)
 				ProcessInitializeOnLoadMethodAttributes (53ms)
 =======
+=======
+>>>>>>> parent of 77be50f (Working Version)
 			CreateAndSetChildDomain (4ms)
 		EndReloadAssembly (2244ms)
 			LoadAssemblies (320ms)
@@ -149,6 +168,9 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (4ms)
 				ProcessInitializeOnLoadAttributes (631ms)
 				ProcessInitializeOnLoadMethodAttributes (212ms)
+<<<<<<< HEAD
+>>>>>>> parent of 77be50f (Working Version)
+=======
 >>>>>>> parent of 77be50f (Working Version)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -156,6 +178,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.007443 seconds.
 Begin MonoManager ReloadAssembly
@@ -208,6 +231,17 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  5.425 seconds
 Domain Reload Profiling:
+=======
+Registered in 0.029877 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Refreshing native plugins compatible for Editor in 372.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.425 seconds
+Domain Reload Profiling:
+>>>>>>> parent of 77be50f (Working Version)
 	ReloadAssembly (5429ms)
 		BeginReloadAssembly (749ms)
 			ExecutionOrderSort (0ms)
@@ -241,14 +275,20 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
 Refreshing native plugins compatible for Editor in 1.81 ms, found 4 plugins.
+<<<<<<< HEAD
+>>>>>>> parent of 77be50f (Working Version)
+=======
 >>>>>>> parent of 77be50f (Working Version)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4081 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 39 unused Assets / (57.9 KB). Loaded Objects now: 4538.
 Memory consumption went from 0.62 GB to 0.62 GB.
 <<<<<<< HEAD
+<<<<<<< HEAD
 Total: 4.045000 ms (FindLiveObjects: 0.500900 ms CreateObjectMapping: 0.147700 ms MarkObjects: 3.298100 ms  DeleteObjects: 0.096500 ms)
 =======
+=======
+>>>>>>> parent of 77be50f (Working Version)
 Total: 7.239400 ms (FindLiveObjects: 0.487100 ms CreateObjectMapping: 0.561000 ms MarkObjects: 6.046700 ms  DeleteObjects: 0.142800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -309,6 +349,9 @@ Unloading 4071 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 26 unused Assets / (32.6 KB). Loaded Objects now: 4541.
 Memory consumption went from 0.62 GB to 0.62 GB.
 Total: 10.441500 ms (FindLiveObjects: 0.751900 ms CreateObjectMapping: 0.539300 ms MarkObjects: 9.065600 ms  DeleteObjects: 0.082400 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 77be50f (Working Version)
+=======
 >>>>>>> parent of 77be50f (Working Version)
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -317,7 +360,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 <<<<<<< HEAD
+<<<<<<< HEAD
   custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+=======
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+>>>>>>> parent of 77be50f (Working Version)
 =======
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
 >>>>>>> parent of 77be50f (Working Version)
@@ -328,6 +375,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< HEAD
 <<<<<<< HEAD
   Time since last request: 886.448164 seconds.
   path: Assets/Scenes/A3.Scene.unity
@@ -3054,6 +3102,8 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 =======
+=======
+>>>>>>> parent of 77be50f (Working Version)
   Time since last request: 4470.081905 seconds.
   path: Assets/Sprites
   artifactKey: Guid(d5aa38aec72496d49890d2d4518f9390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -3127,5 +3177,9 @@ Start importing Assets/Sprites/Power Pellet Animation.png using Guid(0315ab092ff
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
+<<<<<<< HEAD
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> parent of 77be50f (Working Version)
+=======
 Exiting without the bug reporter. Application will terminate with return code 0
 >>>>>>> parent of 77be50f (Working Version)
