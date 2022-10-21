@@ -33,6 +33,11 @@ public class PacStudentController : MonoBehaviour
         ResetState();
     }
 
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
     public void ResetState()
     {
         this.speedMultiplier = 1.0f;
