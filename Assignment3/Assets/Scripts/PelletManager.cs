@@ -32,6 +32,7 @@ public class PelletManager : MonoBehaviour
 
     public void PowerPelletEaten(PowerPelletHandle pellet)
     {
-        PelletEaten(pellet);
+        pellet.gameObject.SetActive(false);
+        SetScore(this.score + pellet.pts);
     }
 }

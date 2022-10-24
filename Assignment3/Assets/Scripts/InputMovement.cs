@@ -6,6 +6,7 @@ public class InputMovement : MonoBehaviour
 {
     public PacStudentController pacStudentController { get; private set; }
     private KeyCode lastInput;
+    private KeyCode currentInput;
 
     void Awake()
     {

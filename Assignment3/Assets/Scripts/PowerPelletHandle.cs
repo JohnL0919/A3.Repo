@@ -6,8 +6,4 @@ public class PowerPelletHandle : PelletHandle
 {
 
 
-    protected virtual void Devour()
-    {
-        FindObjectOfType<PelletManager>().PowerPelletEaten(this);
-    }
 }

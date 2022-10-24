@@ -4,25 +4,23 @@ using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
 {    
-    public float speed = 8.0f;
-    public float speedMultiplier = 1.0f;
+    public float speed = 20.0f;
+    public float speedMultiplier = 2.0f;
     public Vector2 initialDirection;
     public LayerMask obstacleLayer;
 
-    public Rigidbody2D rigidBody { get; private set; }
+    public new Rigidbody2D rigidBody { get; private set; }
     public Vector2 dir { get; private set; }
     public Vector2 nextPos { get; private set; }
     public Vector3 spawnPos { get; private set; }
 
-
-
-    void Awake()
+    private void Awake()
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
         this.spawnPos = this.transform.position;
     }
 
-    void Start()
+    private void Start()
     {
         Reset();
     }
@@ -59,7 +57,7 @@ public class PacStudentController : MonoBehaviour
 
     public bool Occupied(Vector2 dir)
     {
-        RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.75f, 0.0f, dir, 1.5f, this.obstacleLayer);
+        RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.70f, 0.0f, dir, 1.75f, this.obstacleLayer);
         return hit.collider != null;
     }  
     
