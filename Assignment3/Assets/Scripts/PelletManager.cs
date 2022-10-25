@@ -7,8 +7,9 @@ public class PelletManager : MonoBehaviour
 
     public int score { get; private set; }
     public Transform pellets;
+    [SerializeField] private AudioSource pelletSoundEffect;
 
-   
+
     void Start()
     {
         
@@ -26,6 +27,7 @@ public class PelletManager : MonoBehaviour
 
     public void PelletEaten(PelletHandle pellet)
     {
+        pelletSoundEffect.Play();
         pellet.gameObject.SetActive(false);
         SetScore(this.score + pellet.pts);
     }

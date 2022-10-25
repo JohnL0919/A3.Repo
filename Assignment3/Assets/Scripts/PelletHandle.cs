@@ -4,23 +4,14 @@ using UnityEngine;
 
 public class PelletHandle : MonoBehaviour
 {
-    public int pts = 5;
-    public AudioSource Source;
-    public AudioClip Clip;
+    public int pts = 10;
+    
 
-    public void Start()
-    {
-
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("F1 Car"))
         {
-    
-            gameObject.AddComponent<AudioSource>();
-
             Devour();
-            Source.PlayOneShot(Clip);
         }
     }
 
@@ -28,9 +19,8 @@ public class PelletHandle : MonoBehaviour
     {
         FindObjectOfType<PelletManager>().PelletEaten(this);
 
-        
-
     }
+
 
 
 }
