@@ -18,6 +18,8 @@ public class CherryController : MonoBehaviour
 
     void spawnCherry()
     {
-        Instantiate(BonusCherry, new Vector3(2.0f, 0, 0), Quaternion.identity);
+        Vector3 cherryPos = new Vector3(Random.Range(-700f, -600f), Random.Range(-600f, -400f), 0f);
+        Instantiate(BonusCherry, cherryPos, Quaternion.identity);
+        
     }
 }
