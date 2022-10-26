@@ -6,14 +6,15 @@ public class CherryController : MonoBehaviour
 {
     public float spawnTime = 10f;
     public GameObject BonusCherry;
+    float destroyTime = 17.0f;
     void Start()
     {
         InvokeRepeating("spawnCherry", spawnTime, spawnTime);
     }
-
+    
     void Update()
     {
-        
+        Destroy(gameObject, destroyTime);
     }
 
     void spawnCherry()

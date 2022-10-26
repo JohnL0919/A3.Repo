@@ -17,7 +17,7 @@ public class PelletManager : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     private void SetScore(int score)
