@@ -18,7 +18,6 @@ public class PelletHandle : MonoBehaviour
     protected virtual void Devour()
     {
         FindObjectOfType<PelletManager>().PelletEaten(this);
-
     }
 
 
