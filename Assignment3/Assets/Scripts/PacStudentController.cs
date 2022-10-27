@@ -8,6 +8,7 @@ public class PacStudentController : MonoBehaviour
     public float speedMultiplier = 2.0f;
     public Vector2 initialDirection;
     public LayerMask obstacleLayer;
+    [SerializeField] private AudioSource WallSoundEffect;
 
     public new Rigidbody2D rigidBody { get; private set; }
     public Vector2 dir { get; private set; }
@@ -57,10 +58,14 @@ public class PacStudentController : MonoBehaviour
 
     public bool Occupied(Vector2 dir)
     {
+        WallSoundEffect.Play(); 
         RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.70f, 0.0f, dir, 1.75f, this.obstacleLayer);
-        return hit.collider != null;
-    }  
-    
+        return hit.collider != null; 
+    }
+
+        
+
+
     public void Reset()
     {
         this.speedMultiplier = 1.0f;
