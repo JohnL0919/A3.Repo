@@ -1,35 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PelletManager : MonoBehaviour
 {
-
-    public int score { get; private set; }
+    public int score;
+    public int lives { get; private set; }
+    public TextMeshProUGUI scoreText;
     public Transform pellets;
     [SerializeField] private AudioSource pelletSoundEffect;
 
-
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
 
     }
-
-    private void SetScore(int score)
+    public void UpdateScore(int scoreAdd)
     {
-        this.score = score; 
+        score += scoreAdd;
+        scoreText.text = "Score: " + score;
+    }
+
+    private void SetLives(int lives)
+    {
+        this.lives = lives;
     }
 
     public void PelletEaten(PelletHandle pellet)
     {
         pelletSoundEffect.Play();
         pellet.gameObject.SetActive(false);
-        SetScore(this.score + pellet.pts);
+        UpdateScore(10);
+
     }
 
 }

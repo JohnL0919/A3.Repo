@@ -5,10 +5,9 @@ using UnityEngine;
 public class PacStudentController : MonoBehaviour
 {    
     public float speed = 20.0f;
-    public float speedMultiplier = 2.0f;
     public Vector2 initialDirection;
     public LayerMask wallsLayer;
-    [SerializeField] private AudioSource WallSoundEffect;
+    
 
     public new Rigidbody2D rigidBody { get; private set; }
     public Vector2 dir { get; private set; }
@@ -19,6 +18,7 @@ public class PacStudentController : MonoBehaviour
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
         this.spawnPos = this.transform.position;
+        
     }
 
     private void Start()
@@ -29,9 +29,9 @@ public class PacStudentController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 pos = this.rigidBody.position;
-        Vector2 translation = this.dir * this.speed * this.speedMultiplier * Time.fixedDeltaTime;
-        
+        Vector2 translation = this.dir * this.speed * Time.fixedDeltaTime;
         this.rigidBody.MovePosition(pos + translation);
+
     }
 
     public void SetDir(Vector2 dir, bool forced = false)
@@ -43,32 +43,17 @@ public class PacStudentController : MonoBehaviour
         }
 
     }    
-    
-    private void Update()
-    {
-        if(this.nextPos != Vector2.zero)
-        {
-
-            SetDir(this.nextPos);
-          
-        } 
-    }
-
 
     public bool Busy(Vector2 dir)
     {
-        //WallSoundEffect.Play();
-        RaycastHit2D hit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.70f, 0.0f, dir, 1.75f, this.wallsLayer);
-        return hit.collider != null;
+        RaycastHit2D Rhit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.70f, 0.0f, dir, 1.75f, this.wallsLayer);
+        return Rhit.collider != null;
        
     }
 
-        
-
-
     public void Reset()
     {
-        this.speedMultiplier = 1.0f;
+
         this.dir = this.initialDirection;
         this.nextPos = Vector2.zero;
         this.transform.position = this.spawnPos;

@@ -6,15 +6,18 @@ public class WallManager : MonoBehaviour
 {
     public ParticleSystem collision;
     public RaycastHit hit;
+    [SerializeField] private AudioSource WallSoundEffect;
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
       
-        if (other.gameObject.CompareTag("Wall"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Walls"))
          {
-            Debug.Log("Lol");
+            
             collision.Play();
-         }
+            WallSoundEffect.Play();
+        }
     }
 
     void Start()

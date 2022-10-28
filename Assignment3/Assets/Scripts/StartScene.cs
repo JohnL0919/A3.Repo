@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class StartScene : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TextMeshProUGUI timerText;
+    public float timeKeep;
+
     void Start()
     {
         
     }
+    public void UpdateTime(float timeAdd)
+    {
+        timeKeep += timeAdd;
+        timerText.text = "Score: " + timeKeep;
+    }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        UpdateTime(Time.deltaTime);
     }
 
     public void LoadMenu()
