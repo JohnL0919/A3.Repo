@@ -5453,7 +5453,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220157292}
   serializedVersion: 8
-  lengthInSec: 0.7
+  lengthInSec: 0.5
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -11307,9 +11307,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12053008, y: -0.31825444}
+  m_Offset: {x: 0.12053008, y: -0.31625003}
   serializedVersion: 2
-  m_Radius: 1.5093304
+  m_Radius: 1.0094416
 --- !u!82 &1698761067
 AudioSource:
   m_ObjectHideFlags: 0
