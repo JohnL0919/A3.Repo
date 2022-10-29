@@ -6,7 +6,6 @@ public class PelletHandle : MonoBehaviour
 {
     public int pts = 10;
     
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("F1 Car"))
@@ -19,7 +18,4 @@ public class PelletHandle : MonoBehaviour
     {
         FindObjectOfType<PelletManager>().PelletEaten(this);
     }
-
-
-
 }

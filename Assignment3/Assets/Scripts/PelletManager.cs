@@ -15,6 +15,7 @@ public class PelletManager : MonoBehaviour
     {
 
     }
+
     public void UpdateScore(int scoreAdd)
     {
         score += scoreAdd;
@@ -31,7 +32,5 @@ public class PelletManager : MonoBehaviour
         pelletSoundEffect.Play();
         pellet.gameObject.SetActive(false);
         UpdateScore(10);
-
     }
-
 }

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PacStudentController : MonoBehaviour
-{    
-    public float speed = 20.0f;
+{
+    public float speed;
     public Vector2 initialDirection;
     public LayerMask wallsLayer;
     
@@ -18,7 +18,6 @@ public class PacStudentController : MonoBehaviour
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
         this.spawnPos = this.transform.position;
-        
     }
 
     private void Start()
@@ -31,7 +30,6 @@ public class PacStudentController : MonoBehaviour
         Vector2 pos = this.rigidBody.position;
         Vector2 translation = this.dir * this.speed * Time.fixedDeltaTime;
         this.rigidBody.MovePosition(pos + translation);
-
     }
 
     public void SetDir(Vector2 dir, bool forced = false)
@@ -41,19 +39,16 @@ public class PacStudentController : MonoBehaviour
             this.dir = dir;
             this.nextPos = Vector2.zero;
         }
-
     }    
 
     public bool Busy(Vector2 dir)
     {
         RaycastHit2D Rhit = Physics2D.BoxCast(this.transform.position, Vector2.one * 0.70f, 0.0f, dir, 1.75f, this.wallsLayer);
         return Rhit.collider != null;
-       
     }
 
     public void Reset()
     {
-
         this.dir = this.initialDirection;
         this.nextPos = Vector2.zero;
         this.transform.position = this.spawnPos;

@@ -24,16 +24,13 @@ public class CherryController : MonoBehaviour
         Instantiate(BonusCherry, cherryPos, Quaternion.identity);
         
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("F1 Car"))
         {
             Destroy(gameObject);
             p.UpdateScore(100);
-
         }
-
-        
-
     }
 }
