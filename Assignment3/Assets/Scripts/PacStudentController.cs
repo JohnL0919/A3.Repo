@@ -5,13 +5,15 @@ using UnityEngine;
 public class PacStudentController : MonoBehaviour
 {
     public float speed;
-    public Vector2 initialDirection;
+
     public LayerMask wallsLayer;
-    
 
     public new Rigidbody2D rigidBody { get; private set; }
-    public Vector2 dir { get; private set; }
+    
     public Vector2 nextPos { get; private set; }
+    public Vector2 dir { get; private set; }
+    public Vector2 initialDirection;
+
     public Vector3 spawnPos { get; private set; }
 
     private void Awake()
@@ -28,8 +30,8 @@ public class PacStudentController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 pos = this.rigidBody.position;
-        Vector2 translation = this.dir * this.speed * Time.fixedDeltaTime;
-        this.rigidBody.MovePosition(pos + translation);
+        Vector2 tran = this.dir * this.speed * Time.fixedDeltaTime;
+        this.rigidBody.MovePosition(pos + tran);
     }
 
     public void SetDir(Vector2 dir, bool breaks = false)
