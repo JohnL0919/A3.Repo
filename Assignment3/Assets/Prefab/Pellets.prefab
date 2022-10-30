@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 884497480076910829}
   - component: {fileID: 884497480076910830}
   - component: {fileID: 884497480076910831}
+  - component: {fileID: 872301251566963150}
   m_Layer: 8
   m_Name: Pellets
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &884497480076910830
 SpriteRenderer:
@@ -102,7 +103,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.6000001, y: 2.8000002}
+    oldSize: {x: 1.8000001, y: 1.4000001}
     newSize: {x: 0.75, y: 0.5833334}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -111,3 +112,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &872301251566963150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884497480076910824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea1c009857d268d498eb9927c2ebae90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
