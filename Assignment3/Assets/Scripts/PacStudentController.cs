@@ -32,9 +32,9 @@ public class PacStudentController : MonoBehaviour
         this.rigidBody.MovePosition(pos + translation);
     }
 
-    public void SetDir(Vector2 dir, bool forced = false)
+    public void SetDir(Vector2 dir, bool breaks = false)
     {
-        if (forced || !Busy(dir))
+        if (breaks || !Busy(dir))
         {
             this.dir = dir;
             this.nextPos = Vector2.zero;
