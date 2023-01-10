@@ -11,24 +11,11 @@ public class WallManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-      
         if (other.gameObject.layer == LayerMask.NameToLayer("Walls"))
          {
-            
             collision.Play();
             WallSoundEffect.Play();
         }
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-
-        
     }
 
 }

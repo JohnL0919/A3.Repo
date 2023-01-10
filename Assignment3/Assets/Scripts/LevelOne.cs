@@ -6,18 +6,6 @@ using UnityEngine.UI;
 
 public class LevelOne : MonoBehaviour
 {
-
-
-    void Start()
-    {
-
-       
-    }
-
-    void Update()
-    {
-        
-    }
     
     public void LoadFirstLevel()
     {

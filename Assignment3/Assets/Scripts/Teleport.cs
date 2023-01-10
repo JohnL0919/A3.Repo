@@ -9,10 +9,8 @@ public class Teleport : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Vector3 pos = other.transform.position;
-
-        pos.x = this.telPos.position.x;
         pos.y = this.telPos.position.y;
-
+        pos.x = this.telPos.position.x;
         other.transform.position = pos;
     }
 

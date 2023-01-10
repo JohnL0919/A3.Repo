@@ -6,7 +6,6 @@ using TMPro;
 public class PelletManager : MonoBehaviour
 {
     public int score;
-    public int lives { get; private set; }
     public TextMeshProUGUI scoreText;
     public Transform pellets;
     [SerializeField] private AudioSource pelletSoundEffect;
@@ -15,15 +14,11 @@ public class PelletManager : MonoBehaviour
     {
 
     }
+
     public void UpdateScore(int scoreAdd)
     {
         score += scoreAdd;
         scoreText.text = "Score: " + score;
-    }
-
-    private void SetLives(int lives)
-    {
-        this.lives = lives;
     }
 
     public void PelletEaten(PelletHandle pellet)
@@ -31,7 +26,5 @@ public class PelletManager : MonoBehaviour
         pelletSoundEffect.Play();
         pellet.gameObject.SetActive(false);
         UpdateScore(10);
-
     }
-
 }
